@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">week 4 daily 2</string>
+    <string name="phone_s">Phone: %s</string>
+    <string name="email_s">Email: %s</string>
+    <string name="address_s">Address: %s</string>
+    <string name="time_zone_s">Time Zone: %s</string>
+</resources>

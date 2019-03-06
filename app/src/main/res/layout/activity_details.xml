@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetailsActivity">
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/phone_s"
+        app:layout_constraintEnd_toEndOf="@+id/userImage"
+        app:layout_constraintStart_toStartOf="@+id/userImage"
+        app:layout_constraintTop_toBottomOf="@+id/userImage" />
+
+    <TextView
+        android:id="@+id/userEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/email_s"
+        app:layout_constraintEnd_toEndOf="@+id/userPhone"
+        app:layout_constraintStart_toStartOf="@+id/userPhone"
+        app:layout_constraintTop_toBottomOf="@+id/userPhone" />
+
+    <TextView
+        android:id="@+id/userAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/address_s"
+        app:layout_constraintEnd_toEndOf="@+id/userEmail"
+        app:layout_constraintStart_toStartOf="@+id/userEmail"
+        app:layout_constraintTop_toBottomOf="@+id/userEmail" />
+
+    <TextView
+        android:id="@+id/userTimeZone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/time_zone_s"
+        app:layout_constraintEnd_toEndOf="@+id/userAddress"
+        app:layout_constraintStart_toStartOf="@+id/userAddress"
+        app:layout_constraintTop_toBottomOf="@+id/userAddress" />
+</android.support.constraint.ConstraintLayout>
